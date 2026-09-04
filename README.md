@@ -1,53 +1,64 @@
 # Sistema de Gestión de Inventario (Consola)
 
-Proyecto de práctica desarrollado como parte de mi formación como desarrollador de software. Es un sistema CRUD básico por consola para gestionar un inventario de productos, usando estructuras de datos nativas de Python (listas y diccionarios) para almacenar la información en memoria.
+Sistema CRUD básico desarrollado en Python para gestionar un inventario de productos desde consola. Permite agregar, listar, buscar y actualizar productos, utilizando estructuras de datos nativas (listas y diccionarios) para almacenar la información en memoria durante la ejecución.
 
-## Funcionalidades
+Proyecto desarrollado como parte de mi formación como desarrollador de software, con énfasis en buenas prácticas de programación y control de versiones con Git.
 
-- **Agregar producto**: registra un nuevo producto con nombre, cantidad y precio.
-- **Listar productos**: muestra todos los productos registrados en formato de tabla.
-- **Buscar producto**: busca productos por nombre (coincidencia parcial).
+## Tecnologías utilizadas
 
-## Requisitos
+- Python 3
 
-- Python 3.8 o superior (no requiere librerías externas).
+## Requisitos previos
 
-## Instalación
+- Tener instalado Python 3.8 o superior.
+- No se requieren librerías externas, el proyecto usa únicamente la librería estándar de Python.
+
+## Instalación y ejecución
 
 1. Clona el repositorio:
+
    ```bash
    git clone https://github.com/tu-usuario/tu-repositorio.git
+   ```
+
+2. Ingresa a la carpeta del proyecto:
+
+   ```bash
    cd tu-repositorio
    ```
 
-2. No se necesitan dependencias adicionales, ya que el proyecto usa solo la librería estándar de Python.
+3. Ejecuta el script:
 
-## Ejecución
+   ```bash
+   python3 inventario.py
+   ```
 
-Ejecuta el script desde la terminal:
+4. Usa el menú interactivo para gestionar el inventario:
 
-```bash
-python3 inventario.py
-```
+   ```
+   ========================================
+     SISTEMA DE GESTIÓN DE INVENTARIO
+   ========================================
+   1. Agregar producto
+   2. Listar productos
+   3. Buscar producto
+   4. Actualizar producto
+   5. Salir
+   ```
 
-Verás un menú interactivo con las opciones disponibles:
+## Funcionalidades
 
-```
-========================================
-  SISTEMA DE GESTIÓN DE INVENTARIO
-========================================
-1. Agregar producto
-2. Listar productos
-3. Buscar producto
-4. Salir
-```
+- Agregar producto: registra un nuevo producto con nombre, cantidad y precio, validando que los valores numéricos no sean negativos.
+- Listar productos: muestra todos los productos registrados en formato de tabla.
+- Buscar producto: busca productos por nombre, aceptando coincidencias parciales.
+- Actualizar producto: permite modificar la cantidad y/o el precio de un producto existente mediante su ID.
 
 ## Posibles mejoras futuras
 
 - Persistencia de datos en archivo (JSON o CSV).
-- Edición y eliminación de productos.
-- Validaciones más robustas de entrada.
+- Eliminación de productos.
+- Interfaz gráfica o web.
 
 ## Autor
 
-Dilan — Estudiante de desarrollo de software.
+Dilan, estudiante de desarrollo de software.
